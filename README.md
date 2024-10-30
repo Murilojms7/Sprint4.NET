@@ -9,16 +9,16 @@ RM99538|Murilo José|TDSR
 RM98021|Pedro Sena|TDSA
 
  Sprint 4 .Net
-#### Uma Api com estrutura de um e-commerce
+#### Uma Api com estrutura de um e-commerce com gerenciamento de contas
 
 ## Arquitetura da API 
-### Monolítico:
- O projeto esta em fase inicial,então optamos por utilizar o modelo monolítico. O sistemas foi pensado para corporativo interno que não exige escalabilidade massiva, a manutenção de um único código base simplifica o ciclo de desenvolvimento e operação. Sendo mais Simples e tendo baixo custo de produção inicial.
+### Microservices:
+'Microservices' é vantajosa para aplicações de e-commerce devido a suas características de escalabilidade, flexibilidade e independência entre componentes. Em um sistema de e-commerce, vários serviços independentes, como pagamento, catálogo de produtos, carrinho de compras, estoque, e gerenciamento de usuários, podem ser gerenciados separadamente. Isso permite que cada serviço possa ser desenvolvido, escalado e mantido de forma independente.
 
 ### Vantagens:
-- **Desenvolvimento Rápido:** O desenvolvimento de uma aplicação monolítica tende a ser mais rápido, já que não há necessidade de criar contratos de interface entre diferentes serviços ou lidar com as complexidades da comunicação entre componentes distribuídos.
-- **Desempenho em Cenários Simples:** Em aplicações que não demandam uma grande escalabilidade ou processamento distribuído, um monolito pode oferecer melhor desempenho, pois elimina a latência na comunicação entre serviços separados.
-- **Facilidade de Testes e Depuração:** Como tudo está centralizado, realizar testes e depurar problemas é mais direto. Não é necessário se preocupar com comunicação entre serviços distribuídos, o que simplifica a correção de bugs.
+- **Escalabilidade:** Permite escalar componentes específicos conforme a demanda. Por exemplo, em períodos de grande volume, o serviço de carrinho ou de checkout pode ser escalado sem necessidade de escalar o sistema inteiro, otimizando o uso de recursos e reduzindo custos.
+- **Gerenciamento de Dados por Contexto:** Com microservices, dados podem ser gerenciados de acordo com o contexto. Assim, o serviço de estoque pode ter seu próprio banco de dados otimizado, enquanto o serviço de pagamento pode ter um sistema dedicado com alta segurança.
+- **Atualizações e Implementações Contínuas:** A arquitetura facilita a CI/CD (Integração e Entrega Contínuas), permitindo que novos recursos e correções sejam lançados com mais frequência e menos riscos.
 ---
 
 ## Diferenças entre arquitetura Monolítica e Microservices
