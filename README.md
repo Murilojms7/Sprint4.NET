@@ -8,7 +8,7 @@ RM550684|Henry Ribeiro|TDSR
 RM99538|Murilo José|TDSR
 RM98021|Pedro Sena|TDSA
 
- Sprint 3 .Net
+ Sprint 4 .Net
 #### Uma Api com estrutura de um e-commerce
 
 ## Arquitetura da API 
